@@ -28,8 +28,7 @@ function Review({ review }) {
         <p className="job">{review[count].job}</p>
         <p className="info">{review[count].text}</p>
         <img className="person-img" src={review[count].image} />
-      </div>
-      <button className="prev-btn" onClick={handleDecrement}>
+          <button className="prev-btn" onClick={handleDecrement}>
         previous
       </button>
       <button className="next-btn" onClick={handleIncrement}>
@@ -38,6 +37,8 @@ function Review({ review }) {
       <button className="random-btn" onClick={handleRandom}>
         surprise me
       </button>
+      </div>
+      
     </>
   );
 }
