@@ -28,10 +28,10 @@ function Review({ review }) {
         <p className="job">{review[count].job}</p>
         <p className="info">{review[count].text}</p>
         <img className="person-img" src={review[count].image} />
-          <button className="prev-btn" onClick={handleDecrement}>
+          <button className="prev-btn" onClick={handleDecrement} id={`author-${review[count].id}`}>
         previous
       </button>
-      <button className="next-btn" onClick={handleIncrement}>
+      <button className="next-btn" onClick={handleIncrement} id={`author-${review[count].id}`}>
         next
       </button>
       <button className="random-btn" onClick={handleRandom}>
